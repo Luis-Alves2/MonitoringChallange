@@ -33,7 +33,7 @@ def process_records(records: List):
 def evaluate_model(records: List):
 
     # Convert the list of records to a Pandas DataFrame
-    df = pd.DataFrame.from_dict(records)
+    df = pd.DataFrame(records)
 
     # Replace null values with np.nan
     df.fillna(inplace=True, value=np.nan)
